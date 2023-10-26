@@ -1,33 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ejemplo de HTML y CSS</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+        /* Reset de estilos para eliminar márgenes y rellenos predeterminados */
+    body, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Estilos generales del cuerpo de la página */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #A19F8F;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Estilos del encabezado (header) y barra de navegación */
+    header {
+        background-color:#A19F8F;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        
+    }
+    .imagen-cabecera {
+        width:150px ;
+        height:150px;
+        border-radius: 50%;
+        float: left;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin-top: 25px;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+      
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #070606;
+        font-weight: bold;
+    }
+
+    /* Estilos de la sección de inicio */
+    #inicio {
+        text-align: center;
+        padding: 2rem;
+        background-color: #A19F8F;
+    }
+
+    #inicio h1 {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+        
+    }
+
+    #inicio p {
+        font-size: 1.2rem;
+    }
+
+    /* Estilos de la sección de proyectos */
+    #proyectos {
+        padding: 2rem;
+        margin-top: 10px;
+        background-color: #f5f5f5;
+    }
+
+    .proyecto {
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .proyecto h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Estilos de la sección de contacto */
+    #contacto {
+        text-align: center;
+        padding: 2rem;
+        background-color: #fff;
+    }
+
+    #contacto h2 {
+        font-size: 1.8rem;
+    }
+
+    #contacto p {
+        font-size: 1.2rem;
+    }
+
+    /* Agrega más estilos según tus preferencias y diseño personal. */
+
+    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza a tu archivo de hoja de estilos CSS -->
 </head>
 <body>
     <header>
-        <h1>Mi Página Web</h1>
+        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagen de cabecera"class="imagen-cabecera" >
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Acerca de Mí</h2>
-            <p>Soy un desarrollador web y me encanta crear sitios increíbles.</p>
-        </section>
-        <section>
-            <h2>Contacto</h2>
-            <p>Puedes encontrarme en <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a>.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 - Mi Página Web</p>
-    </footer>
+    <section id="inicio">
+        <h1>Cynthia María Gaffet</h1>
+        <p>Desarrollador Web | Developer | Apasionado por la Tecnología</p>
+    </section>
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, illum vero natus delectus quo ad expedita mollitia, doloremque fugiat totam consectetur laboriosam numquam ipsam autem. Modi iusto asperiores incidunt dolorem!</p>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, iusto qui? Ut eaque dignissimos molestiae alias doloremque nisi illum deserunt, iusto quam nihil natus deleniti dolore consequuntur nesciunt commodi laboriosam.</p>
+        </div>
+        <!-- Agrega más proyectos aquí -->
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme en gaffetcynthia@gmail.com o a través de mis redes sociales:</p>
+    
+        <!-- Agrega tus enlaces de redes sociales y dirección de correo electrónico -->
+    </section>
 </body>
 </html>
